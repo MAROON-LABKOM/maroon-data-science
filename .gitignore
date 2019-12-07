@@ -1,4 +1,3 @@
 # Ignore Git for these files
 
-*.model
 .vscode
