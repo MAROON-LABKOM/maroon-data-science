@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table is-fullwidth is-hoverable">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Sepal Length</th>
+            <th>Sepal Width</th>
+            <th>Petal Length</th>
+            <th>Petal Width</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Raw</td>
+            <td>{{ raw[0] }}</td>
+            <td>{{ raw[1] }}</td>
+            <td>{{ raw[2] }}</td>
+            <td>{{ raw[3] }}</td>
+        </tr>
+        <tr>
+            <td>Scaled</td>
+            <td>{{ scaled[0] }}</td>
+            <td>{{ scaled[1] }}</td>
+            <td>{{ scaled[2] }}</td>
+            <td>{{ scaled[3] }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="has-text-centered has-margin-top-40">Hasil klasifikasi:</p>
+<p class="has-text-centered is-size-1">{{ result }}</p>
+
+<a class="button is-info is-inverted is-outlined has-margin-top-50" href="{{ url_for('home') }}">
+    &larr; Kembali ke Klasifikasi</a>
+{% endblock %}

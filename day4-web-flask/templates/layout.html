@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iris Classification</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bulma/bulma.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bulma-helpers/bulma-helpers.css') }}">
+</head>
+
+<body>
+  <section class="hero is-fullheight is-info is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Iris Classification</h1>
+        <p class="subtitle">Klasifikasi bunga Iris, by LABKOM MAROON on MAROON DAY DATA SCIENCE SESSION 3.</p>
+        <hr>
+
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <div class="content has-text-centered has-margin-20">
+        <p>
+          Iris Classification by LABKOM MAROON. Web dibuat menggunakan Bulma CSS.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

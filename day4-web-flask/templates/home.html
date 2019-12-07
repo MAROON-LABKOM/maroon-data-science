@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="{{ url_for('predict') }}" method="post">
+  <div class="field is-horizontal">
+    <div class="field-body">
+      <div class="field">
+        <label class="label has-text-white">Sepal length</label>
+        <div class="control">
+          <input class="input" type="number" min="0" step="0.01" name="sepal-length" placeholder="Sepal length">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label has-text-white">Sepal width</label>
+        <div class="control">
+          <input class="input" type="number" min="0" step="0.01" name="sepal-width" placeholder="Sepal width">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="label has-text-white">Petal length</label>
+          <input class="input" type="number" min="0" step="0.01" name="petal-length" placeholder="Petal length">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label has-text-white">Petal width</label>
+        <div class="control">
+          <input class="input" type="number" min="0" step="0.01" name="petal-width" placeholder="Petal width">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="field has-margin-top-50">
+    <div class="control has-text-centered">
+      <button class="button is-primary is-large">
+        Klasifikasi
+      </button>
+    </div>
+  </div>
+</form>
+{% endblock %}
