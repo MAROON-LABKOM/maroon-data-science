@@ -1,6 +1,6 @@
 # MAROON DAY: DATA SCIENCE
 
-MAROON DAY: DATA SCIENCE merupakan sesi sharing mengenai topik data science yang diadakan secara mingguan dan diselenggarakan oleh Asisten Praktikum Laboratorium Komputer  (LABKOM) Universitas Pakuan.
+MAROON DAY: DATA SCIENCE merupakan sesi sharing mengenai topik data science yang diadakan secara mingguan dan diselenggarakan oleh Asisten Praktikum Laboratorium Komputer  (LABKOM) Universitas Pakuan. bump
 
 ## Roadmap
 
